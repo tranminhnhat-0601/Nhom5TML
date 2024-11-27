@@ -1,0 +1,198 @@
+.tour-detail {
+    margin-top: 100px;
+    padding: 2rem 0;
+}
+
+.tour-header {
+    margin-bottom: rem;
+}
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-item {
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: "/";
+    margin: 0 0.5rem;
+    color: #6c757d;
+}
+
+.breadcrumb-item a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.tour-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+}
+
+.tour-gallery {
+    margin-bottom: 2rem;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.thumbnail-grid img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.thumbnail-grid img:hover {
+    opacity: 0.8;
+}
+
+.tour-info-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.tour-details {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tour-overview {
+    margin-bottom: 2rem;
+}
+
+.tour-highlights {
+    list-style: none;
+    padding: 0;
+}
+
+.tour-highlights li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.tour-highlights i {
+    margin-right: 0.5rem;
+    color: #0d6efd;
+}
+
+.schedule-day {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-day:last-child {
+    border-bottom: none;
+}
+
+.schedule-day h3 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.booking-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 2rem;
+}
+
+.price {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.per-person {
+    color: #6c757d;
+}
+
+.booking-form {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.phone-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .tour-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-image {
+        height: 300px;
+    }
+    
+    .thumbnail-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .booking-card {
+        position: static;
+    }
+}
